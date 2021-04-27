@@ -1,4 +1,4 @@
-//Script Tamaotchi
+//Script Tamagotchi
 
 // Variable
 var hungry = 1;
@@ -26,6 +26,14 @@ function play(faim, joie, energie) {
   }
 }
 
+function poop() {
+  setInterval(function () {
+    var relieve = document.getElementById("poop");
+    relieve.style.display = "inline";
+  }, 6000);
+}
+relieve.onload = poop();
+
 function score() {
   elmHungry.innerText = hungry;
   elmJoy.innerText = joy;
@@ -33,7 +41,6 @@ function score() {
 }
 
 //Règles de jeux
-
 function rules() {
   if (joy < 0 || hungry > 5 || energy < 0) {
     const ban = document.createElement("div");
@@ -49,6 +56,7 @@ var eating = document.getElementById("eat");
 var elmHungry = document.getElementById("fm");
 var elmJoy = document.getElementById("happy");
 var elmEnergy = document.getElementById("eng");
+var relieve = document.getElementById("poop");
 
 //Jouer
 game.addEventListener("click", function () {
@@ -65,16 +73,6 @@ eating.addEventListener("click", function (e) {
 });
 
 //Propreté
-function poop() {
-  setInterval(function () {
-    var relieve = document.getElementById("poop");
-    relieve.style.display = "inline";
-  }, 6000);
-}
-
-var relieve = document.getElementById("poop");
-relieve.onload = poop();
-
 relieve.addEventListener("click", function () {
   relieve.style.display = "none";
 });
