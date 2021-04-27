@@ -1,147 +1,135 @@
-body{
-    background-image:url(./images/green-4039028_1280.jpg) ;
-    background-size: cover;
+body {
+  background-image: url(./images/green-4039028_1280.jpg);
+  background-size: cover;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Potta One', cursive;
-    margin-bottom: 2%;
-    padding-top: 5%;
-}
-    
-
-
-p{
-    display: inline;
-    padding: 5%;
-    font-size: 35px;
-    color: #000000;
-    
-    font-family: 'Potta One', cursive;
-   
-}
-#status{
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Potta One", cursive;
+  margin-bottom: 2%;
+  padding-top: 5%;
 }
 
-#images{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+p {
+  display: inline;
+  padding: 5%;
+  font-size: 35px;
+  color: #000000;
+
+  font-family: "Potta One", cursive;
+}
+#status {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-#treeOne{
-    margin-left: 10%;
-    width:15%;
-    height: 15%;
-    
-}
-#treeTwo{
-    margin-right: 10%;
-    width:15%;
-    height: 15%;
+#images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#monImage{
-    display: flex;
-    margin: auto;
-    
-    box-shadow: inset 4px 8px 19px 7px rgba(0,0,0,0.51);
-    border-radius: 2%;
-    margin-bottom: 5%;
-    background-color:#c0c0c0;
-    width: 45%;
-    padding: 2% 7% 2% 7%;
+#treeOne {
+  margin-left: 10%;
+  width: 15%;
+  height: 15%;
+}
+#treeTwo {
+  margin-right: 10%;
+  width: 15%;
+  height: 15%;
 }
 
-#block{
-    margin: 15% 25% 25% 15%;
-    
-    background-color: #fdc500;
-    width:70%;
-    border-radius: 220px;
-    box-shadow: inset 4px 10px 13px 7px rgba(0,0,0,0.51);
+#monImage {
+  display: flex;
+  margin: auto;
+
+  box-shadow: inset 4px 8px 19px 7px rgba(0, 0, 0, 0.51);
+  border-radius: 2%;
+  margin-bottom: 5%;
+  background-color: #c0c0c0;
+  width: 45%;
+  padding: 2% 7% 2% 7%;
 }
 
-#button{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
-    }
+#block {
+  margin: 15% 25% 25% 15%;
 
-#play{
-    background-color:#fffdfd;
-    font-size: 30px;
-    font-family: 'Potta One', cursive;
-    margin: 1% 2% 2% 0;
-    box-shadow:inset 2px 8px 19px 7px rgba(0,0,0,0.31);
-  
-    width: 15%;
-    border-radius: 20px;
+  background-color: #fdc500;
+  width: 70%;
+  border-radius: 220px;
+  box-shadow: inset 4px 10px 13px 7px rgba(0, 0, 0, 0.51);
 }
 
-#eat{
-    font-family: 'Potta One', cursive;
-    background-color:#fffdfd;
-    font-size: 28px;
-    margin: 1% 0 2% 2%;
-    box-shadow: inset 2px 8px 19px 7px rgba(0,0,0,0.31);
-    width: 15%;
-    border-radius: 20px;
+#button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
 }
 
-#poop{
-    position: absolute;
-    width:5%;
-    right: 35%;
-    display: none;
+#play {
+  background-color: #fffdfd;
+  font-size: 30px;
+  font-family: "Potta One", cursive;
+  margin: 1% 2% 2% 0;
+  box-shadow: inset 2px 8px 19px 7px rgba(0, 0, 0, 0.31);
+
+  width: 15%;
+  border-radius: 20px;
 }
 
-.material-icons{
-    color: rgb(207, 134, 16);
-    font-size: 40px;
-    
+#eat {
+  font-family: "Potta One", cursive;
+  background-color: #fffdfd;
+  font-size: 28px;
+  margin: 1% 0 2% 2%;
+  box-shadow: inset 2px 8px 19px 7px rgba(0, 0, 0, 0.31);
+  width: 15%;
+  border-radius: 20px;
 }
 
+#poop {
+  position: absolute;
+  width: 5%;
+  right: 35%;
+  display: none;
+}
 
-
+.material-icons {
+  color: rgb(207, 134, 16);
+  font-size: 40px;
+}
 
 /* Media Queries */
 
-@media screen and (max-width: 480px){ 
-    #play{
-        font-size: 7px;
-    }
-    #eat{
-        font-size: 7px;
-    }
-    h1{
-        font-size: 30px;
-    }
-    .material-icons{
-        font-size: 20px;    
-    }
-
+@media screen and (max-width: 480px) {
+  #play {
+    font-size: 7px;
+  }
+  #eat {
+    font-size: 7px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .material-icons {
+    font-size: 20px;
+  }
 }
 
-
-@media screen and (max-width: 1200px){ 
-    #play{
-        font-size: 15px;
-    }
-    #eat{
-        font-size: 15px;
-    }
-    h1{
-        font-size: 30px;
-    }
-    .material-icons{
-        font-size: 30px;    
-    }
-
+@media screen and (max-width: 1200px) {
+  #play {
+    font-size: 15px;
+  }
+  #eat {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .material-icons {
+    font-size: 30px;
+  }
 }
